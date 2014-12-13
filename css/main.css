@@ -1,0 +1,25 @@
+h1 {
+  width: 25%; }
+
+h2 {
+  width: 50%; }
+
+h3 {
+  width: 75%; }
+
+.hSizeTest {
+  background-color: blue; }
+
+nav ul li {
+  color: green; }
+
+.redBackground, .redBoldBackground {
+  background-color: red; }
+
+.redBoldBackground {
+  font-weight: bold; }
+
+.fiftyPercent {
+  width: returnMedianPercent(25%, 75%); }
+
+/*# sourceMappingURL=main.css.map */

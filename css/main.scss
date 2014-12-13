@@ -1,0 +1,44 @@
+$size : 25%;
+$lowerSize : 25%;
+$upperSize : 75%;
+
+h1 {
+	width: $size;
+}
+
+h2 {
+	width: $size * 2;
+}
+
+h3 {
+	width: $size * 3;
+}
+
+.hSizeTest {
+	background-color: blue;
+}
+
+nav {
+	ul {
+		li {
+			color: green;
+		}
+	}
+}
+
+.redBackground {
+	background-color: red;
+}
+
+.redBoldBackground {
+	@extend .redBackground;
+	font-weight: bold;
+}
+
+.fiftyPercent {
+	width : returnMedianPercent($lowerSize, $upperSize);
+}
+
+@function returnMedianPercent($lower, $upper) {
+	@return ($lower + $upper) / 2;
+}
